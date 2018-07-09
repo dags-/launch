@@ -1,0 +1,40 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.top {
+    top: 0;
+    margin-top: 5px;
+}
+
+.left {
+    float: left;
+    margin-left: 5px;
+}
+
+.right {
+    float: right;
+    right: 0;
+    margin-right: 5px;
+}
+
+.icon-large {
+    font-size: xx-large;
+    color: #ffffff;
+}
+
+.icon-med {
+    font-size: x-large;
+    color: #ffffff;
+}
+
+.icon-small {
+    font-size: large;
+    color: #ffffff;
+}
+
+.btn {
+    cursor: pointer;
+    user-select: none;
+}

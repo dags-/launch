@@ -1,0 +1,64 @@
+.sidebar {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    height: 100%;
+    z-index: 1;
+    background-color: #fafafa;
+    transition: box-shadow .1s;
+}
+
+.app[data-sidebar="true"] .sidebar {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    display: block;
+    padding: 64px 8px 16px;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modpack {
+    color: #555555;
+    padding: 16px 8px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color .25s;
+}
+
+.modpack[data-selected="true"] {
+    background-color: #eaeaea !important;
+}
+
+.modpack:hover {
+    background-color: #ffffff;
+}
+
+.title {
+    font-size: 1em;
+}
+
+.version {
+    font-size: 0.75em;
+    color: #999999;
+}
+
+.contexts {
+    position: absolute;
+    padding: 16px 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333333;;
+}
+
+.context {
+    display: inline-block;
+    padding: 8px 8px;
+    font-size: 24px;
+    line-height: 24px;
+    color: white;
+}

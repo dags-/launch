@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.app {
+    left: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    transition: left .3s;
+}
+
+.app[data-sidebar="false"] {
+    left: -320px;
+}
+
+.button {
+    user-select: none;
+    cursor: pointer;
+}
+
+.button:active {
+    box-shadow: 0 0 100px 100px rgba(255, 255, 255, 0.25) inset;
+}
+
+.hover {
+    opacity: 0.6;
+    transition: opacity .4s;
+}
+
+.hover:hover {
+    opacity: 1.0;
+}

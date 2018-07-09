@@ -1,0 +1,77 @@
+<html>
+<head>
+    <!-- icons -->
+    <link rel="stylesheet" href="../_app/font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../_app/style/theme.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="./style/app.css">
+    <link rel="stylesheet" href="./style/content.css">
+    <link rel="stylesheet" href="./style/social.css">
+    <link rel="stylesheet" href="./style/news.css">
+    <link rel="stylesheet" href="./style/sidebar.css">
+    <!-- global -->
+    <script src="../_app/script/render.js"></script>
+    <script src="../_app/script/scroll.js"></script>
+    <script src="../_app/script/main.js"></script>
+    <!-- home -->
+    <script src="./script/twitter.js" charset="utf-8"></script>
+    <script src="script/component.js"></script>
+    <script src="script/home.js"></script>
+</head>
+<body onload="onload()">
+
+<div id="app" class="app" data-sidebar="false">
+    <div class="sidebar">
+        <div class="header primary">Modpacks</div>
+        <div id="modpacks"></div>
+        <div id="contexts" class="contexts">
+        </div>
+    </div>
+
+    <div id="content" class="content">
+        <div id="banner" class="banner">
+            <div class="buttons">
+                <div id="launch" class="button launch primary">
+                    Launch
+                </div>
+                <div class="button hover jump mdi mdi-chevron-down" onclick="autoScroll(content, details, 120)"></div>
+            </div>
+        </div>
+
+        <div id="details" class="details">
+            <div class="navbar">
+                <div class="button hover jump mdi mdi-chevron-up" onclick="autoScroll(content, content, 120)"></div>
+            </div>
+            <div class="news">
+                <div class="column left">
+                    <section>
+                        <div class="section-header">
+                            <div class="section-content">Social Links</div>
+                        </div>
+                        <div class="section-content" id="social">
+                        </div>
+                    </section>
+                </div>
+
+                <div class="column right" id="feed">
+                    <a class="twitter-timeline" href="https://twitter.com/ConReforged">.</a>
+                </div>
+            </div>
+            <div class="navbar">
+                <div class="button hover jump mdi mdi-chevron-down" onclick="autoScroll(content, screenshots, 120)"></div>
+            </div>
+        </div>
+
+        <div id="screenshots" class="details">
+          <div class="navbar">
+              <div class="button hover jump mdi mdi-chevron-up" onclick="autoScroll(content, details, 120)"></div>
+          </div>
+        </div>
+
+        <div class="blackout" onclick="toggleSidebar(app)"></div>
+        <div class="button hover menu mdi mdi-menu" onclick="toggleSidebar(app)"></div>
+    </div>
+</div>
+
+</body>
+</html>

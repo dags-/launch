@@ -1,0 +1,49 @@
+.social-button {
+    width: 90%;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 1px auto;
+    text-decoration: none;
+    display: block;
+    border-radius: 1px;
+}
+
+.social-button:hover {
+    box-shadow: 0 0 0 64px rgba(255, 255, 255, 0.05) inset;
+}
+
+.social-button:active {
+    box-shadow: 0 0 0 64px rgba(255, 255, 255, 0.15) inset;
+}
+
+.social-button i {
+    padding-right: 5px;
+}
+
+.social-button span {
+    display: inline-block;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100px;
+}
+
+.discord {
+    color: #ffffff;
+    background: #7289DA;
+}
+
+.patreon {
+    color: #ffffff;
+    background: #F96854;
+}
+
+.github {
+    color: #ffffff;
+    background: #545454;
+}
+
+.twitter {
+    color: #ffffff;
+    background: #33ccff;
+}

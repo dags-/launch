@@ -1,0 +1,82 @@
+body {
+    min-width: 256px;
+    color: #999999;
+    font-family: sans-serif;
+    background-color: #fafafa;
+}
+
+form {
+    width: 80%;
+    padding: 5px;
+    margin: auto;
+    overflow: hidden;
+}
+
+input {
+    font-size: 16px;
+    padding: 10px 10px;
+    margin: 2px 2px;
+    min-width: 100px;
+    color: #999999;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: box-shadow .25s;
+}
+
+input:active {
+    box-shadow: 0 0 75px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+input[type=button] {
+    text-align: center;
+}
+
+input[type=number] {
+    color: #999999;
+    text-align: center;
+}
+
+input[type=range] {
+    padding: 10px 5px;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    padding: 0;
+    border: none;
+    color: transparent;
+}
+
+input[type=text] {
+    transition: border-bottom-color .5s;
+}
+
+input[type=text]:focus {
+    border-bottom: 1px solid #03A9F4;
+}
+
+.header {
+    margin: 2px;
+    padding: 50px 10px 5px;
+    font-size: x-large;
+    color: white;
+    background-color: #03A9F4;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    flex-grow: 1;
+}
+
+.right {
+    width: 100px;
+    min-width: 100px;
+}
