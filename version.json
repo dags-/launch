@@ -7,6 +7,6 @@
     "darwin": ".resources/osx/icon.icns"
   },
   "targets": {
-    "darwin": "amd64"
+    "darwin": ["amd64"]
   }
 }
