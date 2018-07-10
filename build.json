@@ -12,7 +12,7 @@
       "icon": ".resources/osx/icon.icns",
       "arch": ["amd64"],
       "pre": ["go generate"],
-      "flags": [""],
+      "flags": [""]
     }
   }
 }
