@@ -10,13 +10,13 @@
   ],
   "platforms": {
     "darwin": {
-      "icon": ".resources/osx/icon.icns",
+      "icon": "_resources/darwin/icon.icns",
       "arch": ["amd64"],
       "generate": ["rice embed-go"],
       "flags": [""]
     },
     "windows": {
-      "icon": ".resources/windows/icon.ico",
+      "icon": "_resources/windows/icon.ico",
       "arch": ["amd64"],
       "generate": [
         "rice embed-go",
