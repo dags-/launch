@@ -1,6 +1,3 @@
-//go:generate rice embed-go
-// //go:generate goversioninfo -64 -o=resource.syso
-// //go:generate go build -ldflags -H=windowsgui
 package main
 
 import (
@@ -41,7 +38,7 @@ func main() {
 
 func handleBind(w webview.WebView, c chan view.View) {
 	for {
-		v := <- c
+		v := <-c
 		v.Attach(w)
 
 		w.Dispatch(func() {
