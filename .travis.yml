@@ -10,7 +10,13 @@ install:
  - go get -u github.com/dags-/bundler
 script:
  - bundler
-before_cache:
- - find _build -type f
+deploy:
+  provider: releases
+  api_key: '$GITHUB_AUTH'
+  file: "_build/**.zip"
+  file_glob: true
+  skip_cleanup: true
+  on:
+    tags: true
 notifications:
   email: false
