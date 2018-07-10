@@ -22,7 +22,7 @@
       "compress": true,
       "generate": [
         "rice embed-go",
-        "goversioninfo -o=resource.syso"
+        "goversioninfo -64 -o=resource.syso"
       ],
       "flags": ["-H=windowsgui"]
     }
