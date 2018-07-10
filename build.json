@@ -12,7 +12,7 @@
     "darwin": {
       "icon": ".resources/osx/icon.icns",
       "arch": ["amd64"],
-      "pre": ["go generate"],
+      "generate": ["go generate"],
       "flags": [""]
     }
   }
