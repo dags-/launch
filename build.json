@@ -12,12 +12,14 @@
     "darwin": {
       "icon": "_resources/darwin/icon.icns",
       "arch": ["amd64"],
+      "compress": true,
       "generate": ["rice embed-go"],
       "flags": [""]
     },
     "windows": {
       "icon": "_resources/windows/icon.ico",
       "arch": ["amd64"],
+      "compress": true,
       "generate": [
         "rice embed-go",
         "goversioninfo -o=resource.syso"
