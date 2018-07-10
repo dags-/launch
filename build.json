@@ -1,0 +1,18 @@
+{
+  "name": "Launcher",
+  "version": "1.0.0.0",
+  "identifier": "me.dags.launch",
+  "setup": [
+    "go get github.com/GeertJohan/go.rice",
+    "go get github.com/GeertJohan/go.rice/rice",
+    "go get github.com/josephspurrier/goversioninfo/cmd/goversioninfo"
+  ],
+  "platforms": {
+    "darwin": {
+      "icon": ".resources/osx/icon.icns",
+      "arch": ["amd64"],
+      "pre": ["go generate"],
+      "flags": [""],
+    }
+  }
+}
