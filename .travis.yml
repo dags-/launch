@@ -1,0 +1,16 @@
+language: go
+go: 1.10.x
+sudo: required
+services:
+ - docker
+before_install:
+ - docker pull karalabe/xgo-latest
+install:
+ - go get github.com/karalabe/xgo
+ - go get -u github.com/dags-/bundler
+script:
+ - bundler
+before_cache:
+ - find _build -type f
+notifications:
+  email: false
