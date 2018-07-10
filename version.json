@@ -3,5 +3,10 @@
   "version": "1.0.0.0",
   "identifier": "me.dags.launch",
   "build_dir": ".builds",
-  "icon": ".resources/osx/icon.icns"
+  "icon": {
+    "darwin": ".resources/osx/icon.icns"
+  },
+  "targets": {
+    "darwin": "amd64"
+  }
 }
