@@ -8,18 +8,16 @@
     "go get github.com/GeertJohan/go.rice/rice",
     "go get github.com/josephspurrier/goversioninfo/cmd/goversioninfo"
   ],
-  "platforms": {
-    "darwin": {
-      "icon": "_resources/darwin/icon.icns",
-      "arch": ["amd64"],
+  "targets": {
+    "darwin/amd64": {
       "compress": true,
+      "icon": "_resources/darwin/icon.icns",
       "generate": ["rice embed-go"],
       "flags": [""]
     },
-    "windows": {
-      "icon": "_resources/windows/icon.ico",
-      "arch": ["amd64"],
+    "windows/amd64": {
       "compress": true,
+      "icon": "_resources/windows/icon.ico",
       "generate": [
         "rice embed-go",
         "goversioninfo -64 -o=resource.syso"
