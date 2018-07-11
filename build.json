@@ -20,7 +20,7 @@
       "icon": "_resources/windows/icon.ico",
       "generate": [
         "rice embed-go",
-        "goversioninfo -64 -o=resource.syso"
+        "goversioninfo -64"
       ],
       "flags": ["-H=windowsgui"]
     }
