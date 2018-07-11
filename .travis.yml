@@ -13,7 +13,7 @@ script:
 deploy:
   provider: releases
   api_key: '$GITHUB_AUTH'
-  file: "_build/**/*.zip"
+  file: "builds/**/*.zip"
   file_glob: true
   skip_cleanup: true
   on:
