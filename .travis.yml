@@ -1,15 +1,17 @@
 language: go
 go: 1.10.x
 sudo: required
+env:
+- BUNDLE_BUILD_NUM=TRAVIS_BUILD_NUMBER
 services:
- - docker
+- docker
 before_install:
- - docker pull karalabe/xgo-latest
+- docker pull karalabe/xgo-latest
 install:
- - go get github.com/karalabe/xgo
- - go get -u github.com/dags-/bundler
+- go get github.com/karalabe/xgo
+- go get -u github.com/dags-/bundler
 script:
- - bundler
+- bundler
 deploy:
   provider: releases
   api_key: '$GITHUB_AUTH'
