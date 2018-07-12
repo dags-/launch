@@ -1,5 +1,5 @@
 language: go
-go: 1.10.x
+go: "1.10.3"
 sudo: required
 env:
 - BUNDLE_BUILD_NUM=TRAVIS_BUILD_NUMBER
