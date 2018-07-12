@@ -7,9 +7,9 @@ services:
 - docker
 before_install:
 - docker pull karalabe/xgo-latest
-- sudo add-apt-repository ppa:webkit-team/ppa
-- sudo apt-get update
-- sudo apt-get install -y libwebkit2gtk-4.0-37 libwebkit2gtk-4.0-dev
+- sudo add-apt-repository ppa:webkit-team/ppa -y
+- sudo apt-get update -q
+- sudo apt-get install libwebkit2gtk-4.0-37 libwebkit2gtk-4.0-dev -y
 install:
 - go get github.com/karalabe/xgo
 - go get -u github.com/dags-/bundler
