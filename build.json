@@ -12,7 +12,10 @@
   ],
   "targets": {
     "linux/amd64": {
-      "compress": true
+      "compress": true,
+      "meta": {
+        "categories": "Game"
+      }
     },
     "darwin/amd64": {
       "compress": true
