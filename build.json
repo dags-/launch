@@ -11,15 +11,13 @@
     "rice embed-go"
   ],
   "targets": {
+    "linux/amd64": {
+      "compress": true
+    },
     "darwin/amd64": {
       "compress": true
     },
     "windows/amd64": {
-      "compress": true,
-      "generate": ["goversioninfo -64"],
-      "flags": ["-H=windowsgui"]
-    },
-    "windows/386": {
       "compress": true,
       "generate": ["goversioninfo"],
       "flags": ["-H=windowsgui"]
