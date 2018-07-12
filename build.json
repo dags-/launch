@@ -12,6 +12,7 @@
   ],
   "targets": {
     "linux/amd64": {
+      "compress": true,
       "meta": {
         "categories": "Game"
       }
